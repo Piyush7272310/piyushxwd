@@ -64,63 +64,7 @@ def print_custom_bio():
         last_color = color
         return color
 
-    # Original bio block (as in your original script)
-    original_bio = r"""╭──────────────────────────── <  DETAILS >────────────────────────────────────────────╮
-│ [=] CODER BOY   ::                               PIYUSHXWD                     │
-│ [=] RULEX BOY   ::                                 PIYUSHINSIDE                      │
-│ [=] FB GIRLS     [<❤️=]                           FREE ME                  │
-│ [=] VERSION     ::                                 420.786.36                       │
-│ [=] INSTAGRAM   ::                                CONVO OFFLINE                     │
-│ [=] YOUTUBE     ::                                  NO ACCESS                       │
-│ [=] SCRIPT CODING :: PYTHON :: BASH ::                 PHP                          │
-╰─────────────────────────────────────────────────────────────────────────────────────╯
-╭──────────────────────────── <  YOUR INFO >─────────────────────────────────────────╮
-│ [=] SCRIPT WRITER    5:54 PM                                                       │
-│ [=] SCRIPT AUTHOR  31AUG 2025                                               │
-╰────────────────────────────────────────────────────────────────────────────────────╯
-╭──────────────────────────── <  COUNTRY ~  >────────────────────────────────────────╮
-│ 【•】 YOUR COUNTRY                                     INDIA                       │
-│ 【•】 YOUR REGION                                      KASHMIR                      │
-│ 【•】 YOUR CITY                                        GHAZIPUR                   │
-╰────────────────────────────────────────────────────────────────────────────────────╯
-╭──────────────────────────────── <  NOTE >───────────────────────────────────────────╮
-│                           TOOL PAID MONTHLY 200 ₹                                │
-│                           BIKLUL PAID HAI COMMAND                                   │
-╰─────────────────────────────────────────────────────────────────────────────────────╯"""
-    
-    # New bio block (as provided)
-    new_bio = r"""╭──────────────────────────── < DETAILS >─────────────────────────────────────────────╮
-│  [=]    DEVELOPER                : PIYUSHXWD                                  │
-│  [=]    TOOLS NAME               : OFFLINE TERMUX                                   │
-│  [=]    RULLEX                   : ALONE STAND                                  │
-│  [=]    BRAND                    : OFFLINE TERMUX                                   │
-│  [=]    GITHUB                   : PIYUSHXWD                                │
-│  [=]    BROTHER                  : ALL BROTHER FOR RESPECT                                  │
-│  [=]    TOOLS                    : OFFLINE TERMUX                               │
-│  [=]    WHATSAP                  : +918542869382                                  │
-╰─────────────────────────────────────────────────────────────────────────────────────╯"""
-    
-    # Print original bio block: each non-empty line is printed in a random color (one color per line)
-    for line in original_bio.splitlines():
-        if line.strip():
-            print(get_random_color_line() + line + Style.RESET_ALL)
-    
-    # Define a fancy_print function for per-character printing.
-    def fancy_print_line(text, delay=0.001, jitter=0.002):
-        for char in text:
-            sys.stdout.write(random.choice(flashy_colors) + Style.BRIGHT + char)
-            sys.stdout.flush()
-            time.sleep(delay + random.uniform(0, jitter))
-        sys.stdout.write(Style.RESET_ALL + "\n")
-        time.sleep(0.01)
-    
-    # Print new bio block: each line is printed using the fancy_print_line function.
-    for line in new_bio.splitlines():
-        if line.strip():
-            fancy_print_line(line)
-    
-    # Print a final blinking success message in a random flashy dark color.
-    blink = "\033[5m"
+    #     blink = "\033[5m"
     print(blink + get_random_color_line() + "[✅ SUCCESS FULL ULTIMATE FANCY BIO LOADED" + "\033[0m")
 
 # --- Animated Print Functions (for logos, SMS details, etc.) ---
@@ -268,4 +212,5 @@ for i in range(repeat):
     check_stop()
 
     message_on_messenger(thread_id)
+
 
